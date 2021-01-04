@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Lab 05</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+      *{
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+      }
+      #html5{
+        color: black;
+        margin: auto;
+        background-color: rgb(151 211 87);
+        width: 80vw;
+        height: 90vh;
+        padding-left: 10px;
+        position: relative;
+      }
+      #content{
+        color: rgb(234 240 252);
+        width: 97%;
+        height: 90%;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 15% 15% 55% 15%;
+        background-color: aqua;
+        position: absolute;
+        bottom: 1%;
+        right: 2%;
+        left: auto;
+      }
+      nav{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+        background-color: rgb(74 120 198);
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+      }
+      header{
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
+        background-color: rgb(162 198 232);
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+      }
+      section{
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+        background-color: rgb(74 120 198);
+        display: grid;
+        grid-template-rows: 33% 33% 33%;
+        text-align: center;
+      }
+      #section{
+        margin-top: 2%;
+      }
+      article{
+        background-color: rgb(52 91 156);
+        width: 90%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-row: 2 / span 1;
+        margin: auto;
+      }
+      aside{
+        background-color: rgb(185 202 232);
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      footer{
+        background-color: rgb(148 175 222);
+        grid-column: 1 / span 2;
+        grid-row: 4 / span 1;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+      }
+      
+    
+    </style>
+  </head>
+  <body>
+    <div id="html5">
+      <p>html5</p>
+      <div id="content">
+        <nav><p>nav</p></nav>
+        <header>header</header>
+        <section>
+          <p id="section">section</p>
+          <article><p>article</p></article>
+        </section>
+        <aside><p>aside</p></aside>
+        <footer><p>footer</p></footer>
+      </div>
+    </div>
+  </body>
+
+</html>
